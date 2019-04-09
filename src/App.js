@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
 import images from "./images.json";
 import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
@@ -57,12 +56,11 @@ class App extends Component {
       <div>
         <Header
           title="Clicky"
-          desc="A Memory Game."
+          desc="A Memory Game"
           rules="Click on an image to earn points, but don't click on any more than once!"
         />
         <ScoreBoard score={this.state.score} />
         <Wrapper>
-          {/*  */}
           {this.state.images.map(image => (
             <ImageCard
               imageClick={this.imageClick}
@@ -75,30 +73,5 @@ class App extends Component {
     );
   }
 }
-
-//   render() {
-//     return (
-//       <div>
-//         <Header
-//           title="ReMemory"
-//           desc="A React memory game."
-//           rules="Click on an image to earn points, but don't click on an image more than once."
-//         />
-//         <ScoreBoard score={this.state.score} />
-//         <Wrapper>
-//           {/* maps over this.state.images and renders an ImageCard component for each image object */}
-//           {this.state.images.map(image => (
-//             <ImageCard
-//               imageClick={this.imageClick}
-//               id={image.id}
-//               key={image.id}
-//               image={image.imageURL}
-//             />
-//           ))}
-//         </Wrapper>
-//       </div>
-//     );
-//   }
-// }
 
 export default App;

@@ -1,9 +1,14 @@
 .card {
   height: 230px;
   width: 230px;
-  position: relative
+  position: relative;
 }
 
 .card:hover {
-  opacity: 0.5;
+  opacity: 0.7;
+}
+
+.card {
+  overflow: hidden;
+  /* height: 225px; */
 }

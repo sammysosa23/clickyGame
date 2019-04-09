@@ -1,10 +1,9 @@
-.score-bar {
-  padding: 2px 0px;
+.score {
+  padding: 10px 0px;
   color: black;
-  background-color: rgb(226, 136, 136);
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
-.score-bar>h3 {
+.score>h3 {
   color: white;
 }
